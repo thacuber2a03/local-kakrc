@@ -15,3 +15,5 @@ hook global KakBegin .* %{
         fi
     }
 }
+
+hook global BufCreate (.*/)?\.kakrc %{ set-option buffer filetype kak }
